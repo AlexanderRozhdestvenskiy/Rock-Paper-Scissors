@@ -14,7 +14,3 @@ enum GameState {
     case lose
     case draw
 }
-
-
-
-

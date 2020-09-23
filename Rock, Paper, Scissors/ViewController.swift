@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - UI
     
     @IBOutlet weak var ImageGame: UILabel!
     @IBOutlet weak var statusGame: UILabel!
@@ -18,16 +19,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var paper: UIButton!
     @IBOutlet weak var play: UIButton!
     
-    
-    
-    
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI(sos: .start)
-        // Do any additional setup after loading the view.
     }
 
+    // MARK: - Methods
+    
     func updateUI(sos: GameState) {
         if sos == .start {
             ImageGame.text = "🤖"
@@ -48,11 +48,7 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    
-    
-    
-    
+    // MARK: - Action
     
     @IBAction func playerRock(_ sender: UIButton) {
         updateUI(sos: comparison(player: .rock, computer: randomSign()))
@@ -60,13 +56,11 @@ class ViewController: UIViewController {
         scissor.isHidden = true
     }
     
-    
     @IBAction func playerScissor(_ sender: UIButton) {
         updateUI(sos: comparison(player: .scissors, computer: randomSign()))
         paper.isHidden = true
         rock.isHidden = true
     }
-    
     
     @IBAction func playerPaper(_ sender: UIButton) {
         updateUI(sos: comparison(player: .paper, computer: randomSign()))
@@ -74,15 +68,7 @@ class ViewController: UIViewController {
         scissor.isHidden = true
     }
     
-    
     @IBAction func playAgainButton(_ sender: UIButton) {
         updateUI(sos: .start)
     }
-    
-    
-    
-    
-    
-    
 }
-

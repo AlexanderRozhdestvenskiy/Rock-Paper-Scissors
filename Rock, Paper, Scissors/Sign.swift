@@ -46,5 +46,3 @@ func comparison(player: Sign, computer: Sign) -> GameState {
         return .draw
     }
 }
-
-
