@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,32 +29,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYP-RW-bUH">
-                                <rect key="frame" x="51" y="353" width="91.5" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYP-RW-bUH">
+                                <rect key="frame" x="51" y="353" width="96.5" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <state key="normal" title="👊"/>
                                 <connections>
                                     <action selector="playerRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UeS-H0-3hW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jD9-yi-8mR">
-                                <rect key="frame" x="169.5" y="353" width="75" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jD9-yi-8mR">
+                                <rect key="frame" x="174.5" y="353" width="65" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <state key="normal" title="✌️"/>
                                 <connections>
                                     <action selector="playerScissor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZd-To-Xcw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTz-1V-gmG">
-                                <rect key="frame" x="277.5" y="353" width="75" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTz-1V-gmG">
+                                <rect key="frame" x="272.5" y="353" width="65" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <state key="normal" title="🖐"/>
                                 <connections>
                                     <action selector="playerPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="grk-ze-BDm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQi-Du-Wyc">
-                                <rect key="frame" x="127" y="582" width="160" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQi-Du-Wyc">
+                                <rect key="frame" x="143.5" y="776" width="127" height="46"/>
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Play Again"/>
@@ -61,7 +63,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="89P-pj-ld2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Jb-5X-B4M"/>
                             <constraint firstItem="GP4-so-OUn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3AY-8G-iy1"/>
@@ -69,7 +72,6 @@
                             <constraint firstItem="89P-pj-ld2" firstAttribute="centerX" secondItem="LQi-Du-Wyc" secondAttribute="centerX" id="8Qs-Dc-3UX"/>
                             <constraint firstItem="jD9-yi-8mR" firstAttribute="leading" secondItem="xYP-RW-bUH" secondAttribute="trailing" constant="27" id="GYe-0a-6GO"/>
                             <constraint firstItem="xYP-RW-bUH" firstAttribute="top" secondItem="89P-pj-ld2" secondAttribute="bottom" constant="48" id="HCn-9l-JDR"/>
-                            <constraint firstItem="LQi-Du-Wyc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="Nxi-up-f00"/>
                             <constraint firstItem="GP4-so-OUn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="SxG-Kw-GiD"/>
                             <constraint firstItem="89P-pj-ld2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="TXL-mZ-oNf"/>
                             <constraint firstItem="xYP-RW-bUH" firstAttribute="baseline" secondItem="CTz-1V-gmG" secondAttribute="baseline" id="ZTd-FI-gvx"/>
@@ -81,9 +83,8 @@
                             <constraint firstItem="GP4-so-OUn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n6J-Og-Q3N"/>
                             <constraint firstItem="LQi-Du-Wyc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rwH-Fd-WI5"/>
                             <constraint firstItem="89P-pj-ld2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="275" id="wcs-Pl-rwi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LQi-Du-Wyc" secondAttribute="bottom" constant="234" id="yLG-wn-JnJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LQi-Du-Wyc" secondAttribute="bottom" constant="40" id="yLG-wn-JnJ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="ImageGame" destination="GP4-so-OUn" id="8rK-E4-ClV"/>
@@ -99,4 +100,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
